@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Anas\SpecialRequest\Controller\Form\Submit">
+        <arguments>
+            <argument name="uploaderFactory" xsi:type="object">Magento\MediaStorage\Model\File\UploaderFactory</argument>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem</argument>
+        </arguments>
+    </type>
+</config>

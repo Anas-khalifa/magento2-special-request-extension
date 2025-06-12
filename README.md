@@ -30,17 +30,7 @@ php bin/magento cache:flush
 mkdir -p pub/media/special_requests
 chmod -R 777 pub/media/special_requests
 
-4. Create the database table manually using MySQL:
-CREATE TABLE `anas_special_request` (
-  `request_id` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  `full_name` VARCHAR(255),
-  `email` VARCHAR(255),
-  `phone` VARCHAR(100),
-  `entity_name` VARCHAR(255),
-  `special_req` TEXT,
-  `file_name` VARCHAR(255),
-  `file_path` VARCHAR(255)
-);
+-The databasey will be created automatically using MySQL so don't worry.-
 
 Thats it.
 Enjoy

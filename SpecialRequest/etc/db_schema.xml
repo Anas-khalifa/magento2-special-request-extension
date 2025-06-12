@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="anas_special_request" resource="default" engine="innodb" comment="Anas Special Request Table">
+        <column name="request_id" xsi:type="int" unsigned="true" nullable="false" identity="true" comment="Request ID"/>
+        <column name="full_name" xsi:type="varchar" length="255" nullable="true" comment="Full Name"/>
+        <column name="email" xsi:type="varchar" length="255" nullable="true" comment="Email"/>
+        <column name="phone" xsi:type="varchar" length="100" nullable="true" comment="Phone"/>
+        <column name="entity_name" xsi:type="varchar" length="255" nullable="true" comment="Entity Name"/>
+        <column name="special_req" xsi:type="text" nullable="true" comment="Special Request"/>
+        <column name="file_name" xsi:type="varchar" length="255" nullable="true" comment="File Name"/>
+        <column name="file_path" xsi:type="varchar" length="255" nullable="true" comment="File Path"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="request_id"/>
+        </constraint>
+    </table>
+</schema>
